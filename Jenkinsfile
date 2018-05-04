@@ -7,11 +7,11 @@ pipeline {
             steps {
                 echo 'Step 1'
 		
-		sh 'sleep 3'
+		sh 'wait'
 
 		echo 'Step 2'
 		
-		sh 'sleep 3'
+		sh 'wait'
 		
 		echo 'Step 3'
 		

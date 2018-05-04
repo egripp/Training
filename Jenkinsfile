@@ -7,15 +7,30 @@ pipeline {
             steps {
                 echo 'Step 1'
 		
-		sh 'wait'
+		sh 'sleep 5'
 
 		echo 'Step 2'
 		
-		sh 'wait'
+		sh 'sleep 5'
 		
 		echo 'Step 3'
+		    
+		sh 'sleep 5'
+		    
+		sh 'cat README.md'
+		    
+		    
+		sh 'sleep 5'
+		    
+		sh 'docker build -t friendlyhello .'
 		
+		sh 'docker run -p 4000:80 friendlyhello'
+		    
+		sh 'sleep 5'
+		    
+		echo 'Fim do primeiro pipeline'
             }
+	    
         }
     }
 }

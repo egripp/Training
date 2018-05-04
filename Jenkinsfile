@@ -15,7 +15,7 @@ pipeline {
 		
 		echo 'Step 3'
 		    
-		sh 'cat readme.txt'
+		sh 'cat README.txt'
 		
             }
         }

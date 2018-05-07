@@ -22,14 +22,6 @@ pipeline {
 		    
 		sh 'sleep 5'
 		    
-		sh 'pip install -r requirements.txt'
-		    
-		sh 'docker build -t friendlyhello .'
-		
-		sh 'docker run -p 4000:80 friendlyhello'
-		    
-		sh 'sleep 5'
-		    
 		echo 'Fim do primeiro pipeline'
             }
 	    

@@ -5,26 +5,41 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-		sh 'sleep 10'
 		    
                 echo 'Step 1'
 		
+		echo 'Build'
+		    
 		sh 'sleep 5'
 
+            }
+	    
+        }
+	    stage('Test') {
+            steps {
+
+
 		echo 'Step 2'
+		    
+		    echo 'Test'
 		
 		sh 'sleep 5'
+		
+
+            }
+	    
+        }
+	    stage('Deploy') {
+            steps {
+
 		
 		echo 'Step 3'
 		    
-		sh 'sleep 5'
-		    
-		sh 'cat README.md'
-		    
+		echo 'Deploy'
 		    
 		sh 'sleep 5'
 		    
-		echo 'Fim do primeiro pipeline'
+		
             }
 	    
         }
